@@ -1,7 +1,3 @@
-"""WSGI entrypoint for Railway.
+from src.web_panel.app import create_app
 
-Run:
-  gunicorn wsgi:app --bind 0.0.0.0:$PORT
-"""
-
-from src.web_panel.app import app  # noqa: F401
+app = create_app()
